@@ -1,0 +1,62 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    
+    
+}
+
+.h1{
+    color: rgb(26, 152, 26);
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 20px;
+    padding: 30px;
+}
+
+.card{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(64, 60, 60);
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+   
+}
+.layer{
+    height: 0%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(101, 218, 101);
+    color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: height 1s;
+    text-align: center;
+
+}
+.card:hover .layer{
+height: 100%;
+}
+
+div img{
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+
+}
+
+
+.container div:hover img{
+    transform: scale(1.1);
+
+}
+
